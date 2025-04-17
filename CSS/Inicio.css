@@ -1,0 +1,223 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #cc0000;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .hero img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #cc0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #8d0000;
+  }
+  
+  .frase {
+    margin-top: 2rem;
+    font-style: italic;
+    color: #ccc;
+  }
+  
+  .firma {
+    margin-top: 1rem;
+    height: 60px;
+  }
+  
+  .sobre-mi {
+    padding: 4rem 2rem;
+    background-color: #111;
+    text-align: center;
+  }
+  
+  .sobre-mi .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .perfil {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .texto {
+    text-align: center;
+  }
+  
+  .texto h3 {
+    font-size: 1.8rem;
+    color: #cc0000;
+  }
+  
+  .redes a img {
+    width: 30px;
+    margin: 0.5rem;
+    transition: transform 0.3s;
+  }
+  
+  .redes a:hover img {
+    transform: scale(1.1);
+  }
+  
+  .opiniones {
+    padding: 4rem 2rem;
+    background-color: #000;
+    text-align: center;
+  }
+  
+  .opiniones h2 {
+    color: #cc0000;
+    margin-bottom: 2rem;
+  }
+  
+  .opiniones-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .opinion {
+    background-color: #111;
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .opinion img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+  
+  .estrella {
+    color: gold;
+  }
+  
+  .nombre {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contacto {
+    padding: 4rem 2rem;
+  }
+  
+  .contacto img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+  }
+  
+  .btn-contacto {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background-color: #cc0000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background 0.3s;
+  }
+  
+  .btn-contacto:hover {
+    background-color: #8d0000;
+  }
+  
+  footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: transparent; /* Fondo con imagen */
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  footer img {
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+  
+  footer .redes a img {
+    width: 25px;
+    margin: 0.3rem;
+  }
+  
+  @media(min-width: 768px) {
+    .sobre-mi .contenido {
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .opiniones-contenedor {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  
