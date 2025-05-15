@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio - Mi Fotografía</title>
-  <link rel="stylesheet" href="/CSS/Contacto.css">
+  <link rel="stylesheet" href="/CSS/Galeria.css">
   <link rel="icon" type="image/png" href="/IMAGES/Perfil.png">
 </head>
 <body>
@@ -18,7 +18,7 @@
             <li><a href="SobreMi.htm">Sobre Mi</a></li>
             <li><a href="Portafolio.htm">Portafolio</a></li>
             <li class="submenu">
-              <a href="Galeria.htm">Galería</a>
+              <a class="activo" href="Galeria.htm">Galería</a>
               <ul class="submenu-items">
                 <li><a href="Animales.htm">Animales</a></li>
                 <li><a href="Retratos.htm">Retratos</a></li>
@@ -27,38 +27,53 @@
                 <li><a href="Naturaleza.htm">Naturaleza</a></li>
               </ul>
             </li>        
-            <li><a class="activo" href="Contacto.htm">Contacto</a></li> 
+            <li><a href="Contacto.htm">Contacto</a></li> 
           </ul>
         </nav>
       </header>
 
-<section class="contacto">
-  <h2 class="titulo-seccion">Contacto</h2>
-  <div class="info-contacto">
-    <p><img src="/IMAGES/Gmail.png" alt="Gmail"> Meo0901463@gmail.com</p>
-    <p><img src="/IMAGES/Whatsapp.png" alt="WhatsApp"> 78305831</p>
-    <p><img src="/IMAGES/Instagram.png" alt="Instagram"> Mi_Fotografía_Mattai</p>
-    <p><img src="/IMAGES/Facebook.png" alt="Facebook"> Mi Fotografía Mattai</p>
-    <p><img src="/IMAGES/Tiktok.png" alt="TikTok"> Soy Mattai</p>
-    <p><img src="/IMAGES/Youtube.png" alt="YouTube"> @SoyMattai</p>
-  </div>
+<section class="galeria">
+  <h2>Galería</h2>
 
-  <div class="formulario-contacto">
-    <h3>Contáctenos</h3>
-    <form>
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+  <div class="galeria-grid">
+    <div class="galeria-contenedor">
+      <img src="/IMAGES/Animal.jpg" alt="Animales" class="galeria-img">
+      <p class="btn-galeria">
+      <a href="Animales.htm">Animales</a>
+    </p>
+    </div>
 
-      <label for="correo">Correo:</label>
-      <input type="email" id="correo" name="correo" required>
+    <div class="galeria-contenedor">
+      <img src="/IMAGES/Retrato.jpg" alt="Retratos" class="galeria-img">
+      <p class="btn-galeria">
+      <a href="Retratos.htm">Retratos</a>
+    </p>
+    </div>
 
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+    <div class="galeria-contenedor">
+      <img src="/IMAGES/Lugar.jpg" alt="Lugar" class="galeria-img">
+      <p class="btn-galeria">
+      <a href="Lugares.htm">Lugares</a>
+    </p>
+    </div>
 
-      <button type="submit">Enviar</button>
-    </form>
+    <div class="galeria-contenedor">
+      <img src="/IMAGES/Paisaje.jpg" alt="Paisaje" class="galeria-img">
+      <p class="btn-galeria">
+      <a href="Paisajes.htm">Paisajes</a>
+    </p>
+    </div>
+
+    <div class="galeria-contenedor">
+      <img src="/IMAGES/Naturaleza.jpg" alt="Naturaleza" class="galeria-img">
+      <p class="btn-galeria">
+      <a href="Naturaleza.htm">Naturaleza</a>
+    </p>
+    </div>
   </div>
 </section>
+
+      
 
  <footer style="background-image: url('/IMAGES/Footer.png'); background-size: cover;">
     <img src="/IMAGES/Perfil.png" alt="Logo pie de página">
@@ -72,6 +87,6 @@
     </div>
   </footer>
 
-    <script src="/JS/IconBoton.js"></script>
+<script src="/JS/IconBoton.js"></script>
 </body>
 </html>

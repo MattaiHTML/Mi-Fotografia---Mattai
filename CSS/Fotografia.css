@@ -6,10 +6,13 @@
     font-family: 'Segoe UI', sans-serif;
   }
   
-  body {
-    background-color: #000;
-    color: #fff;
-  }
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
   
   header nav {
     display: flex;
@@ -79,100 +82,55 @@
     background-color: #8d0000;
   }
 
-.contacto {
+.galeria-animales {
   padding: 2rem;
   text-align: center;
 }
 
-.titulo-seccion {
-  font-family: 'Segoe UI', cursive;
+.galeria-animales h2 {
   font-size: 2rem;
+  font-style: italic;
   margin-bottom: 2rem;
-  color: white;
 }
 
-.info-contacto {
-  text-align: left;
-  max-width: 600px;
-  margin: 0 auto 3rem;
-}
-
-.info-contacto p {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-  color: white;
-  font-size: 1rem;
-}
-
-.info-contacto img {
-  width: 24px;
-  margin-right: 10px;
-}
-
-.formulario-contacto {
-  max-width: 600px;
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
   margin: 0 auto;
-  background-color: #111;
-  padding: 2rem;
-  border-radius: 15px;
-
 }
 
-.formulario-contacto h3 {
-  color: #cc0000;
-  margin-bottom: 1rem;
-}
-
-.formulario-contacto label {
-  display: block;
-  text-align: left;
-  margin: 0.5rem 0 0.2rem;
-  font-weight: bold;
-}
-
-.formulario-contacto input,
-.formulario-contacto textarea {
+.galeria-img {
   width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: none;
-  border-radius: 8px;
-  background-color: #ddd;
+  border-radius: 20px;
+  transition: transform 3s ease;
 }
 
-.formulario-contacto button {
+.galeria-img:hover {
+  transform: scale(1.1);
+}
+
+.volver-galeria {
+  margin-top: 3rem;
+}
+
+.btn-volver {
   background-color: #cc0000;
   color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 10px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
   font-weight: bold;
-  cursor: pointer;
   transition: background 0.3s;
 }
 
-.formulario-contacto button:hover {
+.btn-volver:hover {
   background-color: #8d0000;
 }
 
-/* Responsivo */
-@media screen and (max-width: 600px) {
-  .info-contacto p {
-    font-size: 0.9rem;
-  }
 
-  .formulario-contacto {
-    padding: 1rem;
-  }
-
-  .formulario-contacto h3 {
-    font-size: 1.3rem;
-  }
-}
-
-
-  /* Footer */
+    /* Footer */
 footer {
   margin-top: 40px;
   text-align: center;
